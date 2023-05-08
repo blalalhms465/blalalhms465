@@ -1,0 +1,104 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_application_5/home.dart';
+
+class myProfile extends StatefulWidget {
+  @override
+  State<myProfile> createState() => _myProfileState();
+}
+
+class _myProfileState extends State<myProfile> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My Profile"),
+      ),
+      body: Container(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(28.0),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Icon(
+                  Icons.person,
+                  size: 110,
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    // border: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(14)),
+                    labelText: 'Full Name',
+                    //s hintText: 'enter your name'
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    // border: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(14)),
+                    labelText: 'Email',
+                    // hintText: 'example@gmail.com'
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    // border: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(14)),
+                    labelText: 'Password',
+                    // hintText: '*****'
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                TextField(
+                  decoration: InputDecoration(
+                    // border: OutlineInputBorder(
+                    //     borderRadius: BorderRadius.circular(14)),
+                    labelText: 'Phone',
+                    // hintText: '+9725206219'
+                  ),
+                ),
+                SizedBox(
+                  height: 80,
+                ),
+                ElevatedButton(
+                    onPressed: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text("Edit"),
+                    )),
+                SizedBox(
+                  height: 100,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+    // InkWell(
+    //               child: Text(
+    //                 "Already have acount? Login here",
+    //                 style: TextStyle(
+    //                     color: Colors.black, fontWeight: FontWeight.bold),
+    //               ),
+    //               onTap: () {
+    //                 Navigator.push(context,
+    //                     MaterialPageRoute(builder: (context) => Home()));
+    //               },
+    //             )
